@@ -18,7 +18,7 @@
   <button id="connectBleButton">Connect to BLE Device</button>
   <button id="disconnectBleButton">Disconnect BLE Device</button>
   <p>BLE state: <strong><span id="bleState" style="color:#d13a30;">Disconnected</span></strong></p>
-  <h2>Hall Sensor Value</h2>
+  <h2>Barrel Extended:</h2>
   <p><span id="valueContainer">NaN</span></p>
   <p>Last reading: <span id="timestamp"></span></p>
   <h2>Control Music</h2>
@@ -36,7 +36,7 @@
     const timestampContainer = document.getElementById('timestamp');
 
     //Define BLE Device Specs
-    var deviceName ='ESP32';
+    var deviceName ='GBPack';
     var bleService = '2edba913-aca9-4414-9e5e-408465a1c9fe';
     var trackCharacteristic = 'e2a9f2d1-4a00-46f2-b1dd-f8e7a99ffddf';
     var sensorCharacteristic= 'a1984090-44bc-4a95-ba1c-77138e6a3d38';
